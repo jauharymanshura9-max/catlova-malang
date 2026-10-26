@@ -1,0 +1,14 @@
+[
+  {
+    "id": "sukun",
+    "nama": "Sukun",
+    "slug": "sukun",
+    "coverage": "Kecamatan Sukun, Kota Malang"
+  },
+  {
+    "id": "kota-malang",
+    "nama": "Kota Malang",
+    "slug": "kota-malang",
+    "coverage": "Seluruh Kota Malang (jangkauan antar-jemput konfirmasi via WA)"
+  }
+]

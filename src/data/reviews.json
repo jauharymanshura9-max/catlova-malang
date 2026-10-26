@@ -1,0 +1,16 @@
+[
+  {
+    "id": "review-1",
+    "nama": "Pelanggan Google Maps",
+    "rating": 5,
+    "teks": "ownernya sabar banget",
+    "tanggal": "2026-10-07"
+  },
+  {
+    "id": "review-2",
+    "nama": "Pelanggan Google Maps",
+    "rating": 5,
+    "teks": "hasil grooming bersih wangi + bonus snack kucing",
+    "tanggal": "2026-10-07"
+  }
+]

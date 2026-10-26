@@ -1,0 +1,58 @@
+[
+  {
+    "id": "grooming-sehat",
+    "nama": "Grooming Sehat",
+    "deskripsi": "Mandi, potong kuku, bersih telinga dan mata, trim paw/anus, parfum. Paket dasar untuk kucing sehat.",
+    "durasi": null,
+    "harga": null,
+    "catatan": "Harga menyusul — chat WA untuk penawaran"
+  },
+  {
+    "id": "grooming-kutu-jamur",
+    "nama": "Grooming Kutu/Jamur",
+    "deskripsi": "Grooming dasar dengan shampoo anti-parasit, penanganan kutu/jamur/scabies.",
+    "durasi": null,
+    "harga": null,
+    "catatan": "Harga menyusul — chat WA untuk penawaran"
+  },
+  {
+    "id": "lion-cut",
+    "nama": "Lion Cut (Add-on)",
+    "deskripsi": "Cukur bulu full/partial dengan styling lion cut. Add-on untuk layanan grooming.",
+    "durasi": null,
+    "harga": null,
+    "catatan": "Harga menyusul — chat WA untuk penawaran"
+  },
+  {
+    "id": "penitipan-harian",
+    "nama": "Penitipan Harian",
+    "deskripsi": "Inap kandang per malam. Fasilitas dan ukuran kandang sesuai tier.",
+    "durasi": null,
+    "harga": null,
+    "catatan": "Harga menyusul — chat WA untuk penawaran"
+  },
+  {
+    "id": "penitipan-lebaran",
+    "nama": "Penitipan Lebaran (Musiman)",
+    "deskripsi": "Penitipan khusus periode lebaran. Booking H-10 sebelum lebaran.",
+    "durasi": null,
+    "harga": null,
+    "catatan": "Harga menyusul — chat WA untuk penawaran"
+  },
+  {
+    "id": "antar-jemput",
+    "nama": "Antar-Jemput",
+    "deskripsi": "Jemput dan antar anabul ke salon. Jangkauan Kota Malang.",
+    "durasi": null,
+    "harga": null,
+    "catatan": "Harga menyusul — chat WA untuk penawaran"
+  },
+  {
+    "id": "free-snack",
+    "nama": "Free Snack",
+    "deskripsi": "Snack kucing sebagai bonus layanan.",
+    "durasi": null,
+    "harga": null,
+    "catatan": "Harga menyusul — chat WA untuk penawaran"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "harga",
+    "pertanyaan": "Berapa harga grooming dan penitipan?",
+    "jawaban": "Harga sedang disusun dan dikonfirmasi ke owner. Chat WA untuk penawaran terbaru. Pricelist akan ditampilkan transparan setelah konfirmasi."
+  },
+  {
+    "id": "jam",
+    "pertanyaan": "Jam operasional CatLova?",
+    "jawaban": "Buka 08:00-17:00 WIB. Hari buka (7 hari atau Senin-Sabtu) konfirmasi via WA."
+  },
+  {
+    "id": "lokasi",
+    "pertanyaan": "Di mana lokasi CatLova?",
+    "jawaban": "Jl. Terusan Mergan Raya No.Kav.1/20, Sukun, Malang."
+  },
+  {
+    "id": "antar-jemput",
+    "pertanyaan": "Apakah ada layanan antar-jemput?",
+    "jawaban": "Free antar-jemput tersedia. Jangkauan area dan jadwal konfirmasi via WA."
+  },
+  {
+    "id": "snack",
+    "pertanyaan": "Apakah ada bonus snack?",
+    "jawaban": "Free snack (bonus) tersedia untuk layanan grooming."
+  },
+  {
+    "id": "vaksin",
+    "pertanyaan": "Syarat vaksin untuk penitipan?",
+    "jawaban": "Syarat kesehatan dan vaksinasi konfirmasi via WA sebelum booking penitipan."
+  },
+  {
+    "id": "cctv",
+    "pertanyaan": "Apakah ada CCTV di area penitipan?",
+    "jawaban": "Status fasilitas (termasuk CCTV) konfirmasi via WA. Update harian WA tersedia selama penitipan."
+  },
+  {
+    "id": "update-wa",
+    "pertanyaan": "Apakah ada update selama penitipan?",
+    "jawaban": "Update via WA selama penitipan. Frekuensi dan format konfirmasi via WA."
+  },
+  {
+    "id": "booking",
+    "pertanyaan": "Bagaimana cara booking?",
+    "jawaban": "Chat WA atau isi form singkat (nama, WA, layanan, tanggal, catatan). Kami balas kurang dari 1 jam pada jam operasional."
+  },
+  {
+    "id": "pembayaran",
+    "pertanyaan": "Metode pembayaran yang diterima?",
+    "jawaban": "Metode pembayaran konfirmasi via WA saat booking."
+  },
+  {
+    "id": "reschedule",
+    "pertanyaan": "Bisa reschedule atau batalkan booking?",
+    "jawaban": "Kebijakan reschedule/pembatalan konfirmasi via WA saat booking."
+  },
+  {
+    "id": "anjing",
+    "pertanyaan": "Apakah melayani anjing?",
+    "jawaban": "Fokus layanan pada kucing. Untuk anjing, konfirmasi ketersediaan via WA."
+  }
+]
