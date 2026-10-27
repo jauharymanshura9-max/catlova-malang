@@ -35,7 +35,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="relative text-body-sm font-medium text-primary transition-colors hover:text-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-tertiary after:transition-all after:duration-200 hover:after:w-full"
+              className="relative text-body-sm font-medium text-primary transition-colors hover:text-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-tertiary after:transition-[width] after:duration-200 hover:after:w-full"
             >
               {item.label}
             </Link>

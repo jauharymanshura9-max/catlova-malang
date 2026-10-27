@@ -150,6 +150,8 @@ components:
 
 Gaya katalog: `muted pastels / warm neutrals + warm earth tones (terracotta + sage) — bagian palet dari riset #7 §2.3` · Diputuskan oleh: `VERONICA dari riset EDITH` · Preferensi kasar klien: `tidak ada (Bos ikut VERONICA)`.
 
+Motion system: satu gaya (Lenis lerp 0.1, Tier-1 ≤5 efek: parallax multi-layer, stagger reveal, counter, progress rail, SVG draw-on-scroll) + 1 signature moment (parallax hero). Budget LCP ≤2.5s, TBT ≤200ms, preloader ≤2s, prefers-reduced-motion fallback wajib. Apple-liquid-glass DITOLAK (brand hangat/lokal).
+
 ## Scope
 
 Satu halaman landing (home) + halaman layanan (grooming, penitipan) + FAQ + kontak/area layanan + 404. Di luar scope: booking online (Fase 2), blog, multi-bahasa, PWA.

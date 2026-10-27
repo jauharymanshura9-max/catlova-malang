@@ -14,7 +14,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-sm px-4 py-[14px] font-display text-base font-semibold shadow-sm transition-all duration-200 ease-out hover:scale-[1.01] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary disabled:cursor-not-allowed disabled:opacity-50";
+    "inline-flex items-center justify-center rounded-sm px-4 py-[14px] font-display text-base font-semibold shadow-sm transition-[background-color,color,box-shadow,transform] duration-200 ease-out hover:scale-[1.01] hover:shadow-md active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary disabled:cursor-not-allowed disabled:opacity-50";
   const variants: Record<ButtonVariant, string> = {
     primary:
       "bg-tertiary text-on-tertiary hover:bg-primary hover:text-on-primary",

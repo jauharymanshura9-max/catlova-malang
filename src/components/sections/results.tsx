@@ -26,7 +26,7 @@ export function Results() {
             return (
               <div key={s.label} className="rounded-md bg-softwhite p-6 text-center">
                 <p
-                  className="font-display font-bold text-tertiary"
+                  className="font-display font-bold text-tertiary tabular-nums"
                   style={{ fontSize: "var(--text-h2)" }}
                   {...counterProps}
                 >

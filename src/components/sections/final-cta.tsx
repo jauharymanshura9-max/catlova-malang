@@ -20,7 +20,7 @@ export function FinalCta() {
             href={wa}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-sm bg-gray-900 px-4 py-[14px] font-display text-base font-semibold text-white shadow-sm transition-all duration-200 ease-out hover:bg-gray-800 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-on-tertiary"
+            className="inline-flex items-center justify-center rounded-sm bg-gray-900 px-4 py-[14px] font-display text-base font-semibold text-white shadow-sm transition-[background-color,color,box-shadow,transform] duration-200 ease-out hover:bg-gray-800 hover:shadow-md active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-on-tertiary"
           >
             Chat WA
           </a>
