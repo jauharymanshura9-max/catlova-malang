@@ -19,7 +19,7 @@ export function Button({
     primary:
       "bg-tertiary text-on-tertiary hover:bg-primary hover:text-on-primary",
     secondary:
-      "bg-secondary text-primary hover:bg-primary hover:text-on-primary",
+      "bg-neutral text-primary hover:bg-primary hover:text-on-primary",
   };
   return <button className={cn(base, variants[variant], className)} {...props} />;
 }

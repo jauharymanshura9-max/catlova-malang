@@ -7,6 +7,7 @@ import { MotionWrapper } from "@/components/layout/motion-wrapper";
 import { Footer } from "@/components/layout/footer";
 import { StickyCta } from "@/components/layout/sticky-cta";
 import { CookieBanner } from "@/components/layout/cookie-banner";
+import { ProgressRail } from "@/components/layout/progress-rail";
 
 const display = Quicksand({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Footer />
         <StickyCta />
         <CookieBanner />
+        <ProgressRail />
         </MotionWrapper>
       </body>
     </html>

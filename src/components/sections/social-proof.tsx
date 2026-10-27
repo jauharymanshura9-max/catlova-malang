@@ -1,4 +1,3 @@
-import Image from "next/image";
 import reviews from "@/data/reviews.json";
 import { Button } from "@/components/ui/button";
 import { waLink } from "@/lib/wa";
@@ -6,7 +5,7 @@ import { waLink } from "@/lib/wa";
 export function SocialProof() {
   return (
     <section className="bg-softwhite reveal">
-      <div className="mx-auto max-w-[1200px] px-4 py-16">
+      <div className="mx-auto max-w-[1200px] px-4 py-8 md:py-16">
         <h2
           className="font-display font-bold leading-[1.15] text-primary"
           style={{ fontSize: "var(--text-h2)" }}
@@ -32,37 +31,52 @@ export function SocialProof() {
             </a>
           </div>
         ) : (
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="mt-8 grid gap-6 md:grid-cols-2 stagger">
             {reviews.map((r) => (
               <blockquote
                 key={r.id}
-                className="rounded-md bg-neutral p-6 text-primary"
+                className="stagger-item rounded-md bg-neutral p-6 text-primary"
               >
                 <p className="text-body-md">“{r.teks}”</p>
                 <footer className="mt-4 text-body-sm text-muted">
-                  {r.nama} · {r.tanggal}
+                  — {r.nama} · 5★
                 </footer>
               </blockquote>
             ))}
           </div>
         )}
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-md bg-biscuit">
-            <Image
-              src="/images/before-after-placeholder.webp"
-              alt="Foto before/after grooming menyusul"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-              quality={75}
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
-            />
+          <div
+            role="img"
+            aria-label="Foto before/after grooming"
+            className="relative aspect-[4/3] overflow-hidden rounded-md bg-gradient-to-br from-biscuit to-secondary/30 flex items-center justify-center"
+          >
+            <svg
+              aria-hidden="true"
+              className="h-16 w-16 text-secondary/60"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
+            </svg>
           </div>
-          <p className="text-body-md text-muted">
-            Foto before/after asli menyusul. Placeholder tidak menggunakan stock
-            photo.
-          </p>
+          <div className="flex flex-col justify-center gap-3">
+            <p className="text-body-md text-muted">
+              Foto before/after — chat WA untuk lihat hasil nyata.
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=CatLova+Malang"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-body-sm text-primary hover:underline"
+            >
+              Lihat ulasan di Google Maps →
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -1,15 +1,17 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Chip } from "@/components/ui/chip";
 import { waLink } from "@/lib/wa";
+
+import { Cat } from "lucide-react";
 
 const wa = waLink("Halo CatLova, saya mau booking grooming. Nama: ... Anabul: ... Tanggal: ...", "hero");
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-neutral hero-enter">
-      <div className="mx-auto grid max-w-[1200px] gap-8 px-4 py-16 md:grid-cols-2 md:items-center">
+      <div className="hero-bg absolute inset-0 bg-gradient-to-b from-biscuit/40 to-neutral" aria-hidden="true" />
+      <div className="relative mx-auto grid max-w-[1200px] gap-8 px-4 py-8 md:py-16 md:grid-cols-2 md:items-center">
         <div>
           <Badge variant="honey">Rating 5,0 · 211 ulasan</Badge>
           <h1
@@ -35,18 +37,12 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <div className="relative aspect-[3/2] overflow-hidden rounded-lg bg-biscuit">
-          <Image
-            src="/images/hero-placeholder.webp"
-            alt="Foto salon CatLova menyusul"
-            fill
-            priority
-            quality={75}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
-          />
+        <div
+          role="img"
+          aria-label="Foto salon CatLova"
+          className="hero-fg hero-draw relative aspect-[3/2] overflow-hidden rounded-lg bg-gradient-to-br from-biscuit to-tertiary/30 flex items-center justify-center"
+        >
+          <Cat className="h-20 w-20 text-tertiary/80" aria-hidden="true" />
         </div>
       </div>
     </section>

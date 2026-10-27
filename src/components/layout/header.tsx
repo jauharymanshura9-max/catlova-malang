@@ -18,7 +18,7 @@ export function Header() {
   const wa = waLink("Halo CatLova, saya mau tanya layanan.", "header");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-warmgray bg-neutral/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-warmgray bg-softwhite/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-4 py-3">
         <Link
           href="/"

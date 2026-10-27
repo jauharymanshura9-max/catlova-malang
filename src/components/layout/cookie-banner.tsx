@@ -9,7 +9,7 @@ export function CookieBanner() {
 
   useEffect(() => {
     try {
-      const stored = window.localStorage.getItem(STORAGE_KEY);
+      const stored = window.sessionStorage.getItem(STORAGE_KEY);
       if (!stored) setVisible(true);
     } catch {
       setVisible(true);
@@ -20,7 +20,7 @@ export function CookieBanner() {
 
   const accept = () => {
     try {
-      window.localStorage.setItem(STORAGE_KEY, "accepted");
+      window.sessionStorage.setItem(STORAGE_KEY, "accepted");
     } catch {
       /* ignore */
     }
@@ -29,7 +29,7 @@ export function CookieBanner() {
 
   const decline = () => {
     try {
-      window.localStorage.setItem(STORAGE_KEY, "declined");
+      window.sessionStorage.setItem(STORAGE_KEY, "declined");
     } catch {
       /* ignore */
     }
@@ -51,14 +51,14 @@ export function CookieBanner() {
           <button
             type="button"
             onClick={decline}
-            className="rounded-sm border border-warmgray px-4 py-2 text-body-sm text-primary"
+            className="rounded-sm border border-warmgray px-4 py-2 text-body-sm text-primary min-h-[44px]"
           >
             Tolak
           </button>
           <button
             type="button"
             onClick={accept}
-            className="rounded-sm bg-tertiary px-4 py-2 text-body-sm font-semibold text-on-tertiary"
+            className="rounded-sm bg-tertiary px-4 py-2 text-body-sm font-semibold text-on-tertiary min-h-[44px]"
           >
             Terima
           </button>

@@ -16,7 +16,7 @@ const wa = waLink(
 
 export const metadata = buildMetadata({
   title: "Layanan Grooming Kucing | CatLova Malang",
-  description: "Detail paket grooming (sehat, kutu/jamur, lion cut add-on), harga placeholder, CTA WhatsApp.",
+  description: "Detail paket grooming (sehat, kutu/jamur, lion cut add-on), CTA WhatsApp.",
   path: "/layanan/grooming",
 });
 
@@ -44,7 +44,7 @@ export default function GroomingPage() {
           Layanan Grooming
         </h1>
         <p className="mt-4 max-w-[66ch] text-body-md text-muted">
-          Paket grooming untuk kucing. Harga menyusul — chat WA untuk penawaran.
+          Paket grooming untuk kucing. Tanya harga via WhatsApp.
         </p>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -53,7 +53,7 @@ export default function GroomingPage() {
               <Chip>{s.nama}</Chip>
               <p className="text-body-md text-primary">{s.deskripsi}</p>
               <p className="text-body-sm text-muted">
-                Durasi: {s.durasi ? `${s.durasi} menit` : "konfirmasi via WA"} · Harga: placeholder
+                Durasi: {s.durasi ? `${s.durasi} menit` : "—"} · Harga: —
               </p>
             </Card>
           ))}

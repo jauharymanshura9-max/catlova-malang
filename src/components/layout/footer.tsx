@@ -5,7 +5,7 @@ const wa = waLink("Halo CatLova, saya mau tanya layanan.", "footer");
 
 export function Footer() {
   return (
-    <footer className="border-t border-warmgray bg-neutral">
+    <footer className="border-t border-warmgray bg-neutral pb-[76px]">
       <div className="mx-auto max-w-[1200px] px-4 py-10">
         <div className="grid gap-8 md:grid-cols-3">
           <div>

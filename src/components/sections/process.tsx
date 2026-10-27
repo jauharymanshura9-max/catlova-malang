@@ -8,16 +8,16 @@ const steps = [
 export function Process() {
   return (
     <section className="bg-softwhite">
-      <div className="mx-auto max-w-[1200px] px-4 py-16">
+      <div className="mx-auto max-w-[1200px] px-4 py-6 md:py-12">
         <h2
           className="font-display font-bold leading-[1.15] text-primary"
           style={{ fontSize: "var(--text-h2)" }}
         >
           Proses
         </h2>
-        <ol className="mt-8 grid gap-6 md:grid-cols-4">
+        <ol className="mt-8 grid gap-4 md:grid-cols-4">
           {steps.map((s, i) => (
-            <li key={s.title} className="rounded-md bg-neutral p-6">
+            <li key={s.title} className="rounded-md bg-neutral p-4">
               <span className="font-display text-2xl font-bold text-tertiary">
                 {i + 1}
               </span>

@@ -16,7 +16,7 @@ const wa = waLink(
 
 export const metadata = buildMetadata({
   title: "Penitipan Kucing (Pet Hotel) | CatLova Malang",
-  description: "Detail penitipan, syarat, harga placeholder, CTA WhatsApp.",
+  description: "Detail penitipan, syarat, CTA WhatsApp.",
   path: "/penitipan",
 });
 
@@ -51,7 +51,7 @@ export default function PenitipanPage() {
           Penitipan Kucing (Pet Hotel)
         </h1>
         <p className="mt-4 max-w-[66ch] text-body-md text-muted">
-          Penitipan harian &amp; musiman (lebaran). Harga menyusul — chat WA.
+          Penitipan harian &amp; musiman (lebaran). Tanya harga via WhatsApp.
         </p>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -60,7 +60,7 @@ export default function PenitipanPage() {
               <Chip>{s.nama}</Chip>
               <p className="text-body-md text-primary">{s.deskripsi}</p>
               <p className="text-body-sm text-muted">
-                Harga: placeholder — chat WA untuk penawaran.
+                Harga: — — tanya via WhatsApp.
               </p>
             </Card>
           ))}

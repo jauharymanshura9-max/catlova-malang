@@ -8,7 +8,7 @@ const wa = waLink("Halo CatLova, saya mau tanya harga.", "harga-page");
 
 export const metadata = buildMetadata({
   title: "Harga Grooming & Penitipan | CatLova Malang",
-  description: "Pricelist transparan (placeholder) + CTA WhatsApp.",
+  description: "Pricelist transparan + CTA WhatsApp.",
   path: "/harga",
 });
 
@@ -18,7 +18,7 @@ export default function HargaPage() {
       <section className="mx-auto max-w-[1200px] px-4 py-16">
         <h1 className="font-display text-4xl font-bold text-primary">Harga</h1>
         <p className="mt-4 max-w-[66ch] text-body-md text-muted">
-          Pricelist transparan. Harga menyusul — chat WA untuk penawaran.
+          Pricelist transparan. Tanya harga via WhatsApp.
         </p>
 
         <div className="mt-8 overflow-x-auto">
@@ -44,7 +44,7 @@ export default function HargaPage() {
                 <tr key={p.id} className="border-b border-warmgray/60">
                   <td className="py-3 text-body-md text-primary">{p.layanan}</td>
                   <td className="py-3 text-body-md text-muted">
-                    {p.harga === null ? "Harga menyusul — chat WA" : p.harga}
+                    {p.harga === null ? "—" : p.harga}
                   </td>
                   <td className="py-3 text-body-sm text-muted">{p.satuan}</td>
                   <td className="py-3 text-body-sm text-muted">{p.catatan}</td>

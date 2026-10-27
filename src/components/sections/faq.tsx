@@ -10,7 +10,7 @@ export function FaqSection() {
 
   return (
     <section className="bg-neutral">
-      <div className="mx-auto max-w-[1200px] px-4 py-16">
+      <div className="mx-auto max-w-[1200px] px-4 py-8 md:py-16">
         <h2
           className="font-display font-bold leading-[1.15] text-primary"
           style={{ fontSize: "var(--text-h2)" }}

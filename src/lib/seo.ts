@@ -28,11 +28,13 @@ export function buildMetadata({
       siteName: "CatLova Malang",
       type: "website",
       locale: "id_ID",
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "CatLova Malang" }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: ["/og-image.png"],
     },
   };
 }

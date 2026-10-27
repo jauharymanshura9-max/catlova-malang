@@ -4,55 +4,55 @@
     "layanan": "Grooming Sehat",
     "harga": null,
     "satuan": "per ekor",
-    "catatan": "Harga menyusul — chat WA untuk penawaran"
+    "catatan": "Tanya harga via WhatsApp"
   },
   {
     "id": "grooming-kutu-jamur",
     "layanan": "Grooming Kutu/Jamur",
     "harga": null,
     "satuan": "per ekor",
-    "catatan": "Harga menyusul — chat WA untuk penawaran"
+    "catatan": "Tanya harga via WhatsApp"
   },
   {
     "id": "lion-cut",
     "layanan": "Lion Cut (Add-on)",
     "harga": null,
     "satuan": "per layanan",
-    "catatan": "Harga menyusul — chat WA untuk penawaran"
+    "catatan": "Tanya harga via WhatsApp"
   },
   {
     "id": "penitipan-kecil",
     "layanan": "Penitipan — Kandang Kecil",
     "harga": null,
     "satuan": "per malam",
-    "catatan": "Harga menyusul — chat WA untuk penawaran"
+    "catatan": "Tanya harga via WhatsApp"
   },
   {
     "id": "penitipan-besar",
     "layanan": "Penitipan — Kandang Besar",
     "harga": null,
     "satuan": "per malam",
-    "catatan": "Harga menyusul — chat WA untuk penawaran"
+    "catatan": "Tanya harga via WhatsApp"
   },
   {
     "id": "penitipan-lebaran",
     "layanan": "Penitipan Lebaran (Musiman)",
     "harga": null,
     "satuan": "per malam",
-    "catatan": "Harga menyusul — chat WA untuk penawaran"
+    "catatan": "Tanya harga via WhatsApp"
   },
   {
     "id": "antar-jemput",
     "layanan": "Antar-Jemput",
     "harga": null,
     "satuan": "per antar-jemput",
-    "catatan": "Harga menyusul — chat WA untuk penawaran"
+    "catatan": "Tanya harga via WhatsApp"
   },
   {
     "id": "free-snack",
     "layanan": "Free Snack",
     "harga": null,
     "satuan": "bonus",
-    "catatan": "Harga menyusul — chat WA untuk penawaran"
+    "catatan": "Tanya harga via WhatsApp"
   }
 ]

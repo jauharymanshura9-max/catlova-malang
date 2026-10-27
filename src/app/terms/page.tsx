@@ -11,7 +11,7 @@ export default function TermsPage() {
     <section className="mx-auto max-w-[1200px] px-4 py-16">
       <h1 className="font-display text-4xl font-bold text-primary">Syarat &amp; Ketentuan</h1>
       <p className="mt-4 text-body-md text-muted">
-        Konten syarat dan ketentuan menyusul. Hubungi kami via WhatsApp untuk info.
+        Konten syarat dan ketentuan akan segera tersedia. Hubungi kami via WhatsApp untuk info.
       </p>
     </section>
   );

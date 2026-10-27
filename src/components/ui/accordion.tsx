@@ -23,7 +23,7 @@ export function Accordion({ items, className }: AccordionProps) {
       {items.map((item) => {
         const isOpen = openId === item.id;
         return (
-          <div key={item.id} className="py-4">
+          <div key={item.id} className="py-4 mb-2">
             <button
               type="button"
               className="flex w-full items-center justify-between text-left font-display text-base font-semibold text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary"

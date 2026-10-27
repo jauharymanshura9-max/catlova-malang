@@ -1,7 +1,7 @@
 export function ProblemSolution() {
   return (
-    <section className="bg-softwhite">
-      <div className="mx-auto max-w-[1200px] px-4 py-16">
+    <section className="bg-softwhite pt-8 md:pt-16 pb-10 md:pb-20">
+      <div className="mx-auto max-w-[1200px] px-4 py-8 md:py-16">
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <h2

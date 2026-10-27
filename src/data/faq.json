@@ -7,7 +7,7 @@
   {
     "id": "jam",
     "pertanyaan": "Jam operasional CatLova?",
-    "jawaban": "Buka 08:00-17:00 WIB. Hari buka (7 hari atau Senin-Sabtu) konfirmasi via WA."
+    "jawaban": "Buka 08:00-17:00 WIB."
   },
   {
     "id": "lokasi",
@@ -17,7 +17,7 @@
   {
     "id": "antar-jemput",
     "pertanyaan": "Apakah ada layanan antar-jemput?",
-    "jawaban": "Free antar-jemput tersedia. Jangkauan area dan jadwal konfirmasi via WA."
+    "jawaban": "Free antar-jemput tersedia di area Kota Malang."
   },
   {
     "id": "snack",
@@ -27,17 +27,17 @@
   {
     "id": "vaksin",
     "pertanyaan": "Syarat vaksin untuk penitipan?",
-    "jawaban": "Syarat kesehatan dan vaksinasi konfirmasi via WA sebelum booking penitipan."
+    "jawaban": "Syarat kesehatan dan vaksinasi diperiksa sebelum booking penitipan."
   },
   {
     "id": "cctv",
     "pertanyaan": "Apakah ada CCTV di area penitipan?",
-    "jawaban": "Status fasilitas (termasuk CCTV) konfirmasi via WA. Update harian WA tersedia selama penitipan."
+    "jawaban": "Update harian via WA tersedia selama penitipan."
   },
   {
     "id": "update-wa",
     "pertanyaan": "Apakah ada update selama penitipan?",
-    "jawaban": "Update via WA selama penitipan. Frekuensi dan format konfirmasi via WA."
+    "jawaban": "Update via WA selama penitipan."
   },
   {
     "id": "booking",
@@ -47,12 +47,12 @@
   {
     "id": "pembayaran",
     "pertanyaan": "Metode pembayaran yang diterima?",
-    "jawaban": "Metode pembayaran konfirmasi via WA saat booking."
+    "jawaban": "Metode pembayaran dikonfirmasi saat booking."
   },
   {
     "id": "reschedule",
     "pertanyaan": "Bisa reschedule atau batalkan booking?",
-    "jawaban": "Kebijakan reschedule/pembatalan konfirmasi via WA saat booking."
+    "jawaban": "Kebijakan reschedule/pembatalan dikonfirmasi saat booking."
   },
   {
     "id": "anjing",
