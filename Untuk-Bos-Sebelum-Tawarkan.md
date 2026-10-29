@@ -295,3 +295,38 @@ VERONICA/FRIDAY eksekusi 7 side (Motion & Animation, Premium Look, UI/UX, Design
 ---
 
 *Phase 2 Premium 10x selesai. Preview live https://catlova-malang.vercel.app. Bos decide: tawarkan sekarang atau iterasi lanjut (foto asli, LCP optimasi, Safari test).*
+
+---
+
+## 10. Mobile 10x (2026-10-30) — PASS
+
+**Kenapa ada bab ini:** setelah Phase 2, ditemukan banyak masalah tampilan di layar HP. Bab ini mencatat apa yang diperbaiki dan bukti ukurnya, supaya Bos tahu kondisi mobile saat menawarkan.
+
+**Cacat sistem yang ditemukan dan diperbaiki [VERIFIED]**
+- `tailwind.config.ts` tidak punya blok `fontSize`. Akibatnya semua token tipografi DESIGN.md (`text-body-sm/md/lg`, `text-h1/h2/h3`, `text-label-caps`, `text-button`) tidak pernah menghasilkan CSS. Seluruh website selama ini memakai ukuran teks default, bukan skala desain. Sekarang sudah ditambahkan; hasil ukur produksi: body-sm 14px, body-md 16px, body-lg 18px di 320/390/1440.
+- Target sentuh di bawah 44px: logo header (83×28), link "Chat WA" (tinggi 20px), link Google Maps, NAP footer (21px). Semua sudah ≥44px di mobile, desktop tidak berubah (`md:min-h-0`).
+
+**Yang diperbaiki [VERIFIED]**
+- Sticky CTA: 48px, `z-40`, otomatis naik ke `bottom-52` saat cookie banner tampil; terukur FAB 120×48 di y=588 dan banner mulai y=700 — tidak bertumpuk.
+- Hero: H1 responsif (`text-3xl sm:text-4xl md:text-5xl`), alamat tidak memotong layout, chip dan jam tidak bertabrakan (chip 16–149px, jam 161–300px).
+- Results: angka `tabular-nums`; problem-solution, features (7 kartu), process: satu kolom di mobile.
+- FAQ: pemicu accordion 48px + chevron, jawaban `leading-[1.7]`.
+- Final CTA: H2 responsif, tombol lebar penuh di mobile.
+- Footer: `pb-[104px]` di mobile supaya copyright tidak tertutup sticky CTA; link 44px.
+- Contact form: input 16px (iOS tidak zoom otomatis), submit penuh, error di bawah field.
+- Halaman harga: tabel bisa digeser di dalam bingkai (halaman sendiri tidak ikut geser); grooming, penitipan, kontak menyesuaikan.
+
+**Bukti ukur [VERIFIED]** — Playwright, build produksi, 6 halaman × 320/375/390
+- `scrollWidth == clientWidth` di semua kombinasi: tidak ada geser horizontal di tingkat halaman.
+- Sisa satu-satunya elemen < 44px adalah tautan "Lewati ke konten" (1×1, sengaja disembunyikan sampai difokus keyboard) — bukan cacat.
+- `tsc` 0, `lint` 0, `build` 0; First Load JS 131 kB.
+- Preview live https://catlova-malang.vercel.app HTTP 200 setelah deploy, memuat kelas `min-h-[44px]` versi baru.
+
+**Residual (jujur, belum selesai) [UNKNOWN]**
+- Lighthouse belum dijalankan ulang; angka performa lama (Perf 0.55 desktop) belum bisa dipakai sebagai klaim.
+- Safari/WebKit belum diuji (dependency sistem belum ada).
+- OG image, foto hero, dan before/after masih placeholder.
+- `npm audit`: 3 kerentanan belum ditutup.
+- Harga layanan, jam buka per hari, aturan penitipan, CCTV/medis: tetap menunggu data dari owner.
+
+**Catatan proses:** beberapa percobaan sebelumnya gagal karena model free kehabisan kuota (`429 FreeUsageLimitError`) dan sesi panjang 129 pesan; pekerjaan akhirnya selesai dengan sesi bersih per tahap. Bukan masalah kode proyek.
