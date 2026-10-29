@@ -24,15 +24,17 @@ export function Results() {
                   ? { "data-counter": "211", "data-decimals": "0" }
                   : {};
             return (
-              <div key={s.label} className="rounded-md bg-softwhite p-6 text-center">
+              <div
+                key={s.label}
+                className="min-w-0 rounded-md bg-softwhite p-4 text-center sm:p-6"
+              >
                 <p
-                  className="font-display font-bold text-tertiary tabular-nums"
-                  style={{ fontSize: "var(--text-h2)" }}
+                  className="font-display text-2xl font-bold leading-tight text-tertiary tabular-nums sm:text-3xl md:[font-size:var(--text-h2)]"
                   {...counterProps}
                 >
                   {s.value}
                 </p>
-                <p className="mt-2 text-body-sm text-gray-700">{s.label}</p>
+                <p className="mt-2 text-body-sm leading-snug text-gray-700">{s.label}</p>
               </div>
             );
           })}
@@ -41,7 +43,7 @@ export function Results() {
           href="https://www.google.com/maps/search/?api=1&query=CatLova+Malang"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-block text-body-sm text-primary hover:underline"
+          className="mt-6 inline-flex min-h-[44px] items-center text-body-sm text-primary hover:underline md:min-h-0"
         >
           Lihat ulasan di Google Maps →
         </a>

@@ -46,15 +46,15 @@ export default function PenitipanPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <section className="mx-auto max-w-[1200px] px-4 py-16">
-        <h1 className="font-display text-4xl font-bold text-primary">
+      <section className="mx-auto max-w-[1200px] px-4 py-8 md:py-16">
+        <h1 className="font-display text-2xl font-bold text-primary sm:text-3xl md:text-h2">
           Penitipan Kucing (Pet Hotel)
         </h1>
         <p className="mt-4 max-w-[66ch] text-body-md text-muted">
           Penitipan harian &amp; musiman (lebaran). Tanya harga via WhatsApp.
         </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
           {boardingServices.map((s) => (
             <Card key={s.id} variant="soft" className="flex flex-col gap-3">
               <Chip>{s.nama}</Chip>
@@ -68,9 +68,14 @@ export default function PenitipanPage() {
 
         <div className="mt-10">
           <h2 className="font-display text-2xl font-bold text-primary">Syarat (estimasi)</h2>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-body-md text-muted">
+          <ul className="mt-4 space-y-3 text-body-md text-muted">
             {syarat.map((s) => (
-              <li key={s}>{s}</li>
+              <li key={s} className="flex items-start gap-2.5 leading-relaxed">
+                <span aria-hidden="true" className="mt-0.5 shrink-0 text-tertiary">
+                  ✓
+                </span>
+                <span>{s}</span>
+              </li>
             ))}
           </ul>
           <p className="mt-4 text-body-sm text-muted">
@@ -79,7 +84,12 @@ export default function PenitipanPage() {
         </div>
 
         <div className="mt-10">
-          <a href={wa} target="_blank" rel="noopener noreferrer">
+          <a
+            href={wa}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-[44px] items-center md:min-h-0"
+          >
             <Button>Chat WA — Booking Penitipan</Button>
           </a>
         </div>

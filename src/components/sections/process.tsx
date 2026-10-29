@@ -15,16 +15,21 @@ export function Process() {
         >
           Proses
         </h2>
-        <ol className="mt-8 grid gap-4 md:grid-cols-4">
+        <ol className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-4">
           {steps.map((s, i) => (
-            <li key={s.title} className="rounded-md bg-neutral p-4">
-              <span className="font-display text-2xl font-bold text-tertiary">
+            <li
+              key={s.title}
+              className="flex items-start gap-4 rounded-md bg-neutral p-4 md:block"
+            >
+              <span className="w-7 shrink-0 font-display text-2xl font-bold leading-none text-tertiary tabular-nums md:leading-normal">
                 {i + 1}
               </span>
-              <h3 className="mt-2 font-display text-base font-semibold text-primary">
-                {s.title}
-              </h3>
-              <p className="mt-2 text-body-sm text-muted">{s.body}</p>
+              <div className="min-w-0">
+                <h3 className="font-display text-base font-semibold text-primary md:mt-2">
+                  {s.title}
+                </h3>
+                <p className="mt-1 text-body-sm text-muted md:mt-2">{s.body}</p>
+              </div>
             </li>
           ))}
         </ol>

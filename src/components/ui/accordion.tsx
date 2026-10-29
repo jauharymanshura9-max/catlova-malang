@@ -2,6 +2,8 @@
 
 import * as React from "react";
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
 import { cn } from "@/lib/utils";
 
 export interface AccordionItem {
@@ -23,18 +25,34 @@ export function Accordion({ items, className }: AccordionProps) {
       {items.map((item) => {
         const isOpen = openId === item.id;
         return (
-          <div key={item.id} className="py-4 mb-2">
+          <div key={item.id} className="py-1">
             <button
               type="button"
-              className="flex w-full items-center justify-between text-left font-display text-base font-semibold text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary"
+              id={`faq-trigger-${item.id}`}
+              aria-controls={`faq-panel-${item.id}`}
+              className="flex min-h-[48px] w-full items-center justify-between gap-3 px-1 py-3 text-left font-display text-base font-semibold text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary"
               aria-expanded={isOpen}
               onClick={() => setOpenId(isOpen ? null : item.id)}
             >
-              <span>{item.title}</span>
-              <span aria-hidden="true">{isOpen ? "−" : "+"}</span>
+              <span className="flex-1">{item.title}</span>
+              <ChevronDown
+                aria-hidden="true"
+                strokeWidth={2}
+                className={cn(
+                  "h-5 w-5 shrink-0 text-tertiary transition-transform duration-200 ease-out",
+                  isOpen && "rotate-180",
+                )}
+              />
             </button>
             {isOpen ? (
-              <div className="mt-3 text-body-md text-primary">{item.content}</div>
+              <div
+                id={`faq-panel-${item.id}`}
+                role="region"
+                aria-labelledby={`faq-trigger-${item.id}`}
+                className="px-1 pb-4 pr-8 text-body-md leading-[1.7] text-primary"
+              >
+                {item.content}
+              </div>
             ) : null}
           </div>
         );

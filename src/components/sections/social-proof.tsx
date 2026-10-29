@@ -25,17 +25,17 @@ export function SocialProof() {
               href={waLink("Halo CatLova, saya mau tanya layanan.", "social-proof")}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block"
+              className="mt-4 inline-flex min-h-[44px] items-center md:min-h-0"
             >
               <Button>Chat WA</Button>
             </a>
           </div>
         ) : (
-          <div className="mt-8 grid gap-6 md:grid-cols-2 stagger">
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 stagger">
             {reviews.map((r) => (
               <blockquote
                 key={r.id}
-                className="stagger-item rounded-md bg-neutral p-6 text-primary"
+                className="stagger-item min-w-0 rounded-md bg-neutral p-6 text-primary"
               >
                 <p className="text-body-md">“{r.teks}”</p>
                 <footer className="mt-4 text-body-sm text-muted">
@@ -45,7 +45,7 @@ export function SocialProof() {
             ))}
           </div>
         )}
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
           <div
             role="img"
             aria-label="Foto before/after grooming"
@@ -64,7 +64,7 @@ export function SocialProof() {
               <path d="M21 15l-5-5L5 21" />
             </svg>
           </div>
-          <div className="flex flex-col justify-center gap-3">
+          <div className="flex min-w-0 flex-col justify-center gap-2">
             <p className="text-body-md text-muted">
               Foto before/after — chat WA untuk lihat hasil nyata.
             </p>
@@ -72,7 +72,7 @@ export function SocialProof() {
               href="https://www.google.com/maps/search/?api=1&query=CatLova+Malang"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-body-sm text-primary hover:underline"
+              className="inline-flex min-h-[44px] items-center text-body-sm text-primary underline-offset-4 hover:underline"
             >
               Lihat ulasan di Google Maps →
             </a>

@@ -40,7 +40,7 @@ export function CookieBanner() {
     <div
       role="dialog"
       aria-label="Persetujuan cookie"
-      className="fixed bottom-0 left-0 right-0 z-50 border-t border-warmgray bg-neutral p-4 shadow-lg"
+      className="fixed bottom-0 left-0 right-0 z-40 border-t border-warmgray bg-neutral p-3 shadow-lg md:p-4"
     >
       <div className="mx-auto flex max-w-[1200px] flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <p className="text-body-sm text-primary">

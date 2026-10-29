@@ -46,7 +46,12 @@ export default function FaqPage() {
         </div>
         <div className="mt-10">
           <p className="text-body-md text-muted">Masih ada pertanyaan?</p>
-          <a href={wa} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block">
+          <a
+            href={wa}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex min-h-[44px] items-center md:min-h-0"
+          >
             <Button>Chat WA</Button>
           </a>
         </div>

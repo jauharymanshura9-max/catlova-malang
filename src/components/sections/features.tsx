@@ -37,18 +37,20 @@ export function Features() {
         >
           Layanan &amp; Manfaat
         </h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 stagger">
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 stagger">
           {paid.map((s) => {
             const Icon = iconMap[s.id] ?? Scissors;
             return (
-              <Card key={s.id} variant="soft" className="stagger-item flex flex-col gap-3">
-                <div className="flex items-center justify-between">
-                  <Chip>
-                    <Icon className="mr-1 inline h-4 w-4" />
+              <Card key={s.id} variant="soft" className="stagger-item flex min-w-0 flex-col gap-3">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                  <Chip className="max-w-full min-w-0">
+                    <Icon className="mr-1 inline h-5 w-5 shrink-0" />
                     {s.nama}
                   </Chip>
                   {featured.has(s.id) ? (
-                    <Badge variant="honey">Unggulan</Badge>
+                    <Badge variant="honey" className="ml-auto shrink-0">
+                      Unggulan
+                    </Badge>
                   ) : null}
                 </div>
                 <p className="text-body-md text-primary">{s.deskripsi}</p>
@@ -60,7 +62,7 @@ export function Features() {
           })}
         </div>
         {free ? (
-          <div className="mt-6 rounded-md border border-warmgray bg-neutral p-6 flex items-start gap-4">
+          <div className="mt-6 rounded-md border border-warmgray bg-neutral p-5 flex items-start gap-4 md:p-6">
             <Gift className="h-6 w-6 text-secondary mt-1" />
             <div className="flex flex-col gap-1">
               <p className="font-display text-base font-semibold text-primary">

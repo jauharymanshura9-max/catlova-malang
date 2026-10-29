@@ -19,7 +19,7 @@ export function Card({
   return (
     <div
       className={cn(
-        "rounded-md p-6 transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md",
+        "rounded-md p-5 transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md md:p-6",
         variants[variant],
         className,
       )}

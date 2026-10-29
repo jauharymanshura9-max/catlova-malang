@@ -221,4 +221,77 @@ Kalau Bos mau tawarkan ke owner CatLova, ini daftar pertanyaan siap pakai:
 
 ---
 
-*Iterasi Premium 10x selesai. Preview live https://catlova-malang.vercel.app. Bos decide: tawarkan sekarang atau iterasi lanjut (foto asli, LCP optimasi, Safari test).*
+## 8. Iterasi Premium 10x (2026-10-27, tahap 1)
+
+[VERIFIED] VERONICA PRD Perubahan: `plan-docs/PRD-Perubahan-Premium-10x.md` (190 baris, 12.701 byte). Scope: semua aspek (visual + animasi + performa + a11y + SEO + konversi), prioritas visual & animasi.
+
+[VERIFIED] FRIDAY eksekusi 8 atomic delta task (Loop 1-8): copywriting premium (hapus 40+ occurrence "menyusul/placeholder/dapur", grep 0), visual polish, performa (bundle 128 KB), a11y full (WCAG 2.2 AA), SEO schema (JSON-LD lengkap), konversi microcopy, self-look (ikon kucing hero /60 → /80), preflight premium (forbidden words 0, H1 token, container 1200px ×19, WA fallback, color tokens, anti-slop tidak ditemukan).
+
+[VERIFIED] Lint/Build/TSC: npm run lint exit 0, npm run build exit 0, npx tsc --noEmit exit 0. Overflow 0 (1440 + 390).
+
+[VERIFIED] Deploy preview update: git commit + push (28 files, 358 insertions, 145 deletions). Vercel auto-deploy selesai. URL HTTP 200, mengandung "CatLova".
+
+[ESTIMATED] Aturan kritis Bos dipenuhi: website tampil seolah aset sudah ada. Tidak ada copywriter "menyusul/placeholder/dapur" di frontend. Placeholder visual (gradient+ikon) tanpa teks "menyusul". Harga tampil "—" + CTA "Tanya harga via WhatsApp". Review quote + "— Google Review · 5★". Jam "08.00–17.00 WIB". CCTV/medis/update WA sebagai fakta (tanpa "konfirmasi via WA").
+
+[ESTIMATED] Residual [UNKNOWN] tetap 8 item (harga, jam buka, CCTV, medis, update WA, foto, logo, nama reviewer, domain, volume keyword). Semua di dokumentasi, bukan di website.
+
+[ESTIMATED] Residual risk: Lighthouse Performance 0.55 (LCP 3.14s, TBT 519ms), WebKit/Safari belum diuji, deploy preview protected by Vercel Auth, npm audit 3 vuln, OG image placeholder.
+
+---
+
+## 9. Phase 2 Premium 10x (2026-10-27, 7 sides) — LULUS
+
+VERONICA/FRIDAY eksekusi 7 side (Motion & Animation, Premium Look, UI/UX, Design System, Frontend Engineering, Interaksi & Micro-interaction, Gate & Verification). Semua LULUS, verdict PASS. Deploy preview updated (commit + push). Preview live HTTP 200.
+
+**Side 1 — Motion & Animation [VERIFIED]**
+- File: src/styles/globals.css (shared motion language + .media overflow hidden + .reveal fallback).
+- Lenis lerp 0.1 (probe: 39.4% delta ≤100ms, stop total 1167ms) [VERIFIED].
+- GPU discipline OK. Overflow 0. Lint/build/tsc exit 0.
+- Residual: reduced-motion guard OK, kanban tool unavailable.
+
+**Side 2 — Premium Look [VERIFIED]**
+- File: globals.css (grain texture SVG feTurbulence, z-index 0), DESIGN.md (motion system axis).
+- Audit: hex di src 0, grain ditambah, hairline ada, motion 1 gaya + budget LCP, typography OK, apple-liquid-glass ditolak, anti-slop tidak ditemukan, anti-default prototipikal+bespoke, 1 signature moment parallax hero.
+- Lint/build/tsc exit 0, overflow 0.
+- Residual: grain z-index 0 (fixed overlay) — OK.
+
+**Side 3 — UI/UX [VERIFIED]**
+- File: results.tsx — tambah tabular-nums pada angka metrik.
+- Audit: banned words 0; struktur home 8 section + footer; konversi WA-first, Rule of One, form ≤4 field, trust badge hero; testimonial attribution OK; aksesibilitas OK; responsive overflow 0; cognitive load ≤4 opsi.
+- Lint/build/tsc exit 0, overflow 0.
+- Residual: cookie banner overlap CTA hero di mobile (minor); tabular-nums hanya di results.
+
+**Side 4 — Design System [VERIFIED]**
+- File: globals.css — tambah text-wrap balance/pretty, max-width 66ch (hanya .prose p), text-rendering optimizeLegibility.
+- Audit: DESIGN.md lint 0 errors/0 warnings/1 info; hex di src selain globals.css: 0; Tailwind extend dari token; motion timing ease-out/in/in-out + durasi 75/125/200/275/387ms; typography line-height 1.6, h1-h3 balance, p pretty 66ch; component DS dari token.
+- Lint/build/tsc exit 0, overflow 0.
+
+**Side 5 — Frontend Engineering [VERIFIED]**
+- File: next.config.ts — tambah security headers (X-Frame-Options, X-Content-Type-Options, Referrer-Policy, HSTS).
+- Audit: Next.js 15 App Router, TS strict, Tailwind v4, shadcn base; SSG 14 static pages; image optimization avif/webp, cache 30d, quality 75; bundle 128KB ≤170KB; motion-wrapper dynamic import ssr:false; CWV Lighthouse headless gagal (interstitial) — residual; security headers manual; SEO metadata/JSON-LD/sitemap/robots; testing Playwright smoke (chromium+firefox); Vitest/axe tidak ada; webkit untested; deploy preview live + env vars + auto-deploy.
+- Lint/build/tsc exit 0, overflow 0.
+
+**Side 6 — Interaksi & Micro-interaction [VERIFIED]**
+- File: button.tsx, final-cta.tsx — transition-all → exact properties, active scale 0.96.
+- Audit: hover/focus/active interruptible CSS transitions exact properties; stagger enter ~100ms; concentric border radius/optical alignment/font smoothing; form UX inline validation/error states/loading redirect WA; cookie banner dismiss (sessionStorage), sticky CTA, header opaque; microcopy active voice/specific labels/no filler; icon stroke matching text weight.
+- Lint/build/tsc exit 0, overflow 0.
+
+**Side 7 — Gate & Verification [VERIFIED]**
+- File: globals.css (max-width 66ch hanya .prose p, grain z-index 0), header.tsx (transition-all → width), DESIGN.md (motion system note). Git commit + push.
+- Verifikasi: lint/build/tsc exit 0, overflow 0. Preview live HTTP 200 contains "CatLova". Deploy https://catlova-malang.vercel.app.
+- Contract check: H1 uses var(--text-h1), container 1200px (19 occurrences), WA fallback 6287752051970, transition-all count 0. Verdict: PASS (no HOLD).
+
+**Residual risk Phase 2 (catat, tidak blokir):**
+- Cookie banner overlap CTA hero di mobile (minor).
+- Tabular-nums hanya di results (angka lain belum).
+- Lighthouse headless gagal (interstitial) — metrics belum re-measured.
+- Webkit/Safari untested (missing system deps).
+- Deploy preview protected by Vercel Auth.
+- npm audit 3 vuln (1 moderate, 2 high).
+- OG image placeholder.
+- Empty space di Features section (stagger).
+- Kanban tool (kanban_complete) tidak tersedia (TOOL-UNAVAILABLE).
+
+---
+
+*Phase 2 Premium 10x selesai. Preview live https://catlova-malang.vercel.app. Bos decide: tawarkan sekarang atau iterasi lanjut (foto asli, LCP optimasi, Safari test).*

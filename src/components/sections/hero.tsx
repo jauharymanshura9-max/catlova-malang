@@ -14,10 +14,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-[1200px] gap-8 px-4 py-8 md:py-16 md:grid-cols-2 md:items-center">
         <div>
           <Badge variant="honey">Rating 5,0 · 211 ulasan</Badge>
-          <h1
-            className="mt-4 font-display font-bold leading-[1.05] tracking-[-0.02em] text-primary"
-            style={{ fontSize: "var(--text-h1)" }}
-          >
+          <h1 className="mt-4 font-display text-3xl font-bold leading-tight tracking-[-0.02em] text-primary sm:text-4xl md:text-5xl lg:leading-[1.05] lg:[font-size:var(--text-h1)]">
             Grooming &amp; Penitipan Kucing Malang
           </h1>
           <p className="mt-4 max-w-[66ch] text-body-lg text-muted">
@@ -27,12 +24,17 @@ export function Hero() {
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Chip>Free antar-jemput</Chip>
             <span className="text-body-sm text-muted">Jam 08.00-17.00 WIB</span>
-            <span className="text-body-sm text-muted">
+            <span className="min-w-0 break-words text-body-sm text-muted">
               Jl. Terusan Mergan Raya No.Kav.1/20, Sukun, Malang
             </span>
           </div>
           <div className="mt-8">
-            <a href={wa} target="_blank" rel="noopener noreferrer">
+            <a
+              href={wa}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-[44px] items-center md:min-h-0"
+            >
               <Button>Chat WA — Booking Grooming</Button>
             </a>
           </div>

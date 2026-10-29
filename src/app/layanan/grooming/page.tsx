@@ -39,15 +39,15 @@ export default function GroomingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <section className="mx-auto max-w-[1200px] px-4 py-16">
-        <h1 className="font-display text-4xl font-bold text-primary">
+      <section className="mx-auto max-w-[1200px] px-4 py-8 md:py-16">
+        <h1 className="font-display text-2xl font-bold text-primary sm:text-3xl md:text-h2">
           Layanan Grooming
         </h1>
         <p className="mt-4 max-w-[66ch] text-body-md text-muted">
           Paket grooming untuk kucing. Tanya harga via WhatsApp.
         </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
           {groomingServices.map((s) => (
             <Card key={s.id} variant="soft" className="flex flex-col gap-3">
               <Chip>{s.nama}</Chip>
@@ -60,7 +60,12 @@ export default function GroomingPage() {
         </div>
 
         <div className="mt-10">
-          <a href={wa} target="_blank" rel="noopener noreferrer">
+          <a
+            href={wa}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-[44px] items-center md:min-h-0"
+          >
             <Button>Chat WA — Booking Grooming</Button>
           </a>
         </div>
